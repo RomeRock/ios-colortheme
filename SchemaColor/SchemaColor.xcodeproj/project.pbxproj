@@ -12,6 +12,11 @@
 		3F5DCDF61E5E1D5600940210 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F5DCDF41E5E1D5600940210 /* Main.storyboard */; };
 		3F5DCDF81E5E1D5600940210 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3F5DCDF71E5E1D5600940210 /* Assets.xcassets */; };
 		3F5DCDFB1E5E1D5600940210 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3F5DCDF91E5E1D5600940210 /* LaunchScreen.storyboard */; };
+		3F5DCE101E5E390B00940210 /* themes.json in Resources */ = {isa = PBXBuildFile; fileRef = 3F5DCE0F1E5E390B00940210 /* themes.json */; };
+		3F5DCE121E5E50F000940210 /* SchemaTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5DCE111E5E50F000940210 /* SchemaTableViewController.swift */; };
+		3F5DCE141E5E511900940210 /* SchemaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5DCE131E5E511900940210 /* SchemaTableViewCell.swift */; };
+		3F5DCE171E5E57F900940210 /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5DCE161E5E57F900940210 /* Schema.swift */; };
+		3F5DCE1A1E5E6A4400940210 /* CustomExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5DCE191E5E6A4400940210 /* CustomExtentions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +27,23 @@
 		3F5DCDF71E5E1D5600940210 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3F5DCDFA1E5E1D5600940210 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3F5DCDFC1E5E1D5600940210 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3F5DCE031E5E2FAE00940210 /* Roboto-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Black.ttf"; sourceTree = "<group>"; };
+		3F5DCE041E5E2FAE00940210 /* Roboto-BlackItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BlackItalic.ttf"; sourceTree = "<group>"; };
+		3F5DCE051E5E2FAE00940210 /* Roboto-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Bold.ttf"; sourceTree = "<group>"; };
+		3F5DCE061E5E2FAE00940210 /* Roboto-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-BoldItalic.ttf"; sourceTree = "<group>"; };
+		3F5DCE071E5E2FAE00940210 /* Roboto-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Italic.ttf"; sourceTree = "<group>"; };
+		3F5DCE081E5E2FAE00940210 /* Roboto-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Light.ttf"; sourceTree = "<group>"; };
+		3F5DCE091E5E2FAE00940210 /* Roboto-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-LightItalic.ttf"; sourceTree = "<group>"; };
+		3F5DCE0A1E5E2FAE00940210 /* Roboto-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Medium.ttf"; sourceTree = "<group>"; };
+		3F5DCE0B1E5E2FAE00940210 /* Roboto-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-MediumItalic.ttf"; sourceTree = "<group>"; };
+		3F5DCE0C1E5E2FAE00940210 /* Roboto-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Regular.ttf"; sourceTree = "<group>"; };
+		3F5DCE0D1E5E2FAE00940210 /* Roboto-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-Thin.ttf"; sourceTree = "<group>"; };
+		3F5DCE0E1E5E2FAE00940210 /* Roboto-ThinItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Roboto-ThinItalic.ttf"; sourceTree = "<group>"; };
+		3F5DCE0F1E5E390B00940210 /* themes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = themes.json; sourceTree = "<group>"; };
+		3F5DCE111E5E50F000940210 /* SchemaTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchemaTableViewController.swift; sourceTree = "<group>"; };
+		3F5DCE131E5E511900940210 /* SchemaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchemaTableViewCell.swift; sourceTree = "<group>"; };
+		3F5DCE161E5E57F900940210 /* Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schema.swift; sourceTree = "<group>"; };
+		3F5DCE191E5E6A4400940210 /* CustomExtentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomExtentions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +76,55 @@
 		3F5DCDEF1E5E1D5600940210 /* SchemaColor */ = {
 			isa = PBXGroup;
 			children = (
+				3F5DCE181E5E6A1100940210 /* Extentions */,
+				3F5DCE151E5E57DF00940210 /* Models */,
+				3F5DCE021E5E2F5000940210 /* Font */,
 				3F5DCDF01E5E1D5600940210 /* AppDelegate.swift */,
 				3F5DCDF21E5E1D5600940210 /* ViewController.swift */,
 				3F5DCDF41E5E1D5600940210 /* Main.storyboard */,
 				3F5DCDF71E5E1D5600940210 /* Assets.xcassets */,
 				3F5DCDF91E5E1D5600940210 /* LaunchScreen.storyboard */,
 				3F5DCDFC1E5E1D5600940210 /* Info.plist */,
+				3F5DCE0F1E5E390B00940210 /* themes.json */,
+				3F5DCE111E5E50F000940210 /* SchemaTableViewController.swift */,
+				3F5DCE131E5E511900940210 /* SchemaTableViewCell.swift */,
 			);
 			path = SchemaColor;
+			sourceTree = "<group>";
+		};
+		3F5DCE021E5E2F5000940210 /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				3F5DCE031E5E2FAE00940210 /* Roboto-Black.ttf */,
+				3F5DCE041E5E2FAE00940210 /* Roboto-BlackItalic.ttf */,
+				3F5DCE051E5E2FAE00940210 /* Roboto-Bold.ttf */,
+				3F5DCE061E5E2FAE00940210 /* Roboto-BoldItalic.ttf */,
+				3F5DCE071E5E2FAE00940210 /* Roboto-Italic.ttf */,
+				3F5DCE081E5E2FAE00940210 /* Roboto-Light.ttf */,
+				3F5DCE091E5E2FAE00940210 /* Roboto-LightItalic.ttf */,
+				3F5DCE0A1E5E2FAE00940210 /* Roboto-Medium.ttf */,
+				3F5DCE0B1E5E2FAE00940210 /* Roboto-MediumItalic.ttf */,
+				3F5DCE0C1E5E2FAE00940210 /* Roboto-Regular.ttf */,
+				3F5DCE0D1E5E2FAE00940210 /* Roboto-Thin.ttf */,
+				3F5DCE0E1E5E2FAE00940210 /* Roboto-ThinItalic.ttf */,
+			);
+			name = Font;
+			sourceTree = "<group>";
+		};
+		3F5DCE151E5E57DF00940210 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3F5DCE161E5E57F900940210 /* Schema.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		3F5DCE181E5E6A1100940210 /* Extentions */ = {
+			isa = PBXGroup;
+			children = (
+				3F5DCE191E5E6A4400940210 /* CustomExtentions.swift */,
+			);
+			name = Extentions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -96,6 +159,7 @@
 				TargetAttributes = {
 					3F5DCDEC1E5E1D5600940210 = {
 						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = CKJD28WL5K;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -124,6 +188,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3F5DCDFB1E5E1D5600940210 /* LaunchScreen.storyboard in Resources */,
+				3F5DCE101E5E390B00940210 /* themes.json in Resources */,
 				3F5DCDF81E5E1D5600940210 /* Assets.xcassets in Resources */,
 				3F5DCDF61E5E1D5600940210 /* Main.storyboard in Resources */,
 			);
@@ -136,8 +201,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3F5DCE141E5E511900940210 /* SchemaTableViewCell.swift in Sources */,
+				3F5DCE1A1E5E6A4400940210 /* CustomExtentions.swift in Sources */,
+				3F5DCE121E5E50F000940210 /* SchemaTableViewController.swift in Sources */,
 				3F5DCDF31E5E1D5600940210 /* ViewController.swift in Sources */,
 				3F5DCDF11E5E1D5600940210 /* AppDelegate.swift in Sources */,
+				3F5DCE171E5E57F900940210 /* Schema.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +329,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CKJD28WL5K;
 				INFOPLIST_FILE = SchemaColor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.romerock.modules.SchemaColor;
@@ -272,6 +342,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = CKJD28WL5K;
 				INFOPLIST_FILE = SchemaColor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.romerock.modules.SchemaColor;

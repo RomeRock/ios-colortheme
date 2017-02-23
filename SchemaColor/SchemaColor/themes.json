@@ -1,0 +1,29 @@
+{
+    "themes": [
+        {
+               "name" : "BLUE",
+               "primaryColor" : "17B0EF",
+               "secondaryColor" : "0288D1",
+               "isFree" : true
+        },
+        {
+               "name" : "ORANGE",
+               "primaryColor" : "EF4517",
+               "secondaryColor" : "C33109",
+               "isFree" : true
+        },
+        {
+               "name" : "GREEN",
+               "primaryColor" : "5CBF0C",
+               "secondaryColor" : "489B05",
+               "isFree" : false
+        },
+        {
+               "name" : "PINK",
+               "primaryColor" : "E20A70",
+               "secondaryColor" : "B00858",
+               "isFree" : false
+        }
+        
+    ]
+}
