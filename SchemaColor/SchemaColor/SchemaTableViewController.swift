@@ -64,8 +64,8 @@ class SchemaTableViewController: UITableViewController {
     
     private func updateColor() {
         
-        var primaryColor = "343434"
-        var secondaryColor = "000000"
+        var primaryColor = "17B0EF"
+        var secondaryColor = "0288D1"
         
         if UserDefaults.standard.object(forKey: "primaryColor") != nil {
             primaryColor = UserDefaults.standard.string(forKey: "primaryColor")!
