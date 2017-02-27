@@ -17,6 +17,9 @@
 		3F5DCE141E5E511900940210 /* SchemaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5DCE131E5E511900940210 /* SchemaTableViewCell.swift */; };
 		3F5DCE171E5E57F900940210 /* Schema.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5DCE161E5E57F900940210 /* Schema.swift */; };
 		3F5DCE1A1E5E6A4400940210 /* CustomExtentions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F5DCE191E5E6A4400940210 /* CustomExtentions.swift */; };
+		5D366D371E61CEBD00F29762 /* SWRevealViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D366D361E61CEBD00F29762 /* SWRevealViewController.m */; };
+		5D366D391E61DFE100F29762 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D366D381E61DFE100F29762 /* MenuViewController.swift */; };
+		5D366D3B1E6201B500F29762 /* PreviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D366D3A1E6201B500F29762 /* PreviewViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +35,11 @@
 		3F5DCE131E5E511900940210 /* SchemaTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SchemaTableViewCell.swift; sourceTree = "<group>"; };
 		3F5DCE161E5E57F900940210 /* Schema.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Schema.swift; sourceTree = "<group>"; };
 		3F5DCE191E5E6A4400940210 /* CustomExtentions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomExtentions.swift; sourceTree = "<group>"; };
+		5D366D341E61CEBD00F29762 /* SchemaColor-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SchemaColor-Bridging-Header.h"; sourceTree = "<group>"; };
+		5D366D351E61CEBD00F29762 /* SWRevealViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SWRevealViewController.h; sourceTree = "<group>"; };
+		5D366D361E61CEBD00F29762 /* SWRevealViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SWRevealViewController.m; sourceTree = "<group>"; };
+		5D366D381E61DFE100F29762 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		5D366D3A1E6201B500F29762 /* PreviewViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreviewViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +72,7 @@
 		3F5DCDEF1E5E1D5600940210 /* SchemaColor */ = {
 			isa = PBXGroup;
 			children = (
+				5D366D331E61CE8700F29762 /* Libraries */,
 				3F5DCE181E5E6A1100940210 /* Extentions */,
 				3F5DCE151E5E57DF00940210 /* Models */,
 				3F5DCDF01E5E1D5600940210 /* AppDelegate.swift */,
@@ -75,6 +84,8 @@
 				3F5DCE111E5E50F000940210 /* SchemaTableViewController.swift */,
 				3F5DCE131E5E511900940210 /* SchemaTableViewCell.swift */,
 				3F25F4991E60FC4C00D8B78C /* HomeViewController.swift */,
+				5D366D381E61DFE100F29762 /* MenuViewController.swift */,
+				5D366D3A1E6201B500F29762 /* PreviewViewController.swift */,
 			);
 			path = SchemaColor;
 			sourceTree = "<group>";
@@ -93,6 +104,16 @@
 				3F5DCE191E5E6A4400940210 /* CustomExtentions.swift */,
 			);
 			name = Extentions;
+			sourceTree = "<group>";
+		};
+		5D366D331E61CE8700F29762 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				5D366D351E61CEBD00F29762 /* SWRevealViewController.h */,
+				5D366D361E61CEBD00F29762 /* SWRevealViewController.m */,
+				5D366D341E61CEBD00F29762 /* SchemaColor-Bridging-Header.h */,
+			);
+			name = Libraries;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -128,6 +149,7 @@
 					3F5DCDEC1E5E1D5600940210 = {
 						CreatedOnToolsVersion = 8.2.1;
 						DevelopmentTeam = CKJD28WL5K;
+						LastSwiftMigration = 0820;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -169,12 +191,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D366D371E61CEBD00F29762 /* SWRevealViewController.m in Sources */,
 				3F5DCE141E5E511900940210 /* SchemaTableViewCell.swift in Sources */,
 				3F5DCE1A1E5E6A4400940210 /* CustomExtentions.swift in Sources */,
 				3F5DCE121E5E50F000940210 /* SchemaTableViewController.swift in Sources */,
 				3F5DCDF11E5E1D5600940210 /* AppDelegate.swift in Sources */,
 				3F5DCE171E5E57F900940210 /* Schema.swift in Sources */,
 				3F25F49A1E60FC4C00D8B78C /* HomeViewController.swift in Sources */,
+				5D366D391E61DFE100F29762 /* MenuViewController.swift in Sources */,
+				5D366D3B1E6201B500F29762 /* PreviewViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,11 +322,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = CKJD28WL5K;
 				INFOPLIST_FILE = SchemaColor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.romerock.modules.SchemaColor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SchemaColor/SchemaColor-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -310,11 +338,13 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				DEVELOPMENT_TEAM = CKJD28WL5K;
 				INFOPLIST_FILE = SchemaColor/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.romerock.modules.SchemaColor;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "SchemaColor/SchemaColor-Bridging-Header.h";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;

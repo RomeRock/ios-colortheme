@@ -90,3 +90,8 @@ extension UIView {
         }
     }
 }
+
+extension Notification.Name {
+    static let updateTheme = NSNotification.Name("updateTheme")
+    static let fullVersion = NSNotification.Name("fullVersion")
+}

@@ -11,8 +11,6 @@ import UIKit
 class SchemaTableViewController: UITableViewController {
 
     var schemas:[Schema] = []
-    var statusBarBackground:UIView = UIView()
-
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,18 +21,7 @@ class SchemaTableViewController: UITableViewController {
         // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
         // self.navigationItem.rightBarButtonItem = self.editButtonItem()
         
-        statusBarBackground = UIView(frame: CGRect(x: 0, y: -20, width:UIScreen.main.bounds.size.width, height:20))
         
-        self.navigationController?.navigationBar.addSubview(self.statusBarBackground)
-        
-        let titleLabel:UILabel = UILabel()
-        titleLabel.backgroundColor = UIColor.clear
-        titleLabel.font = UIFont.boldSystemFont(ofSize: 17)
-        titleLabel.textAlignment = .center
-        titleLabel.textColor = UIColor.white
-        titleLabel.text = "Select color theme"
-        titleLabel.sizeToFit()
-        self.navigationItem.titleView = titleLabel
         
         if let path = Bundle.main.path(forResource: "themes", ofType: "json") {
             do {
@@ -52,36 +39,34 @@ class SchemaTableViewController: UITableViewController {
             } catch {}
         }
         
-        
-        
-        //tableView.reloadData()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        updateColor()
+        NotificationCenter.default.addObserver(self, selector: #selector(SchemaTableViewController.updateColor), name: .updateTheme, object: nil)
+        NotificationCenter.default.addObserver(self, selector: #selector(SchemaTableViewController.setFullVersion), name: .fullVersion, object: nil)
         
     }
     
-    private func updateColor() {
+    @IBAction func backItemPressed(_ sender: Any) {
+        _ = navigationController?.popViewController(animated: true)
+    }
+    
+    
+    func updateColor() {
         
         var primaryColor = "17B0EF"
-        var secondaryColor = "0288D1"
         
         if UserDefaults.standard.object(forKey: "primaryColor") != nil {
             primaryColor = UserDefaults.standard.string(forKey: "primaryColor")!
         }
-        
-        if UserDefaults.standard.object(forKey: "secondaryColor") != nil {
-            secondaryColor = UserDefaults.standard.string(forKey: "secondaryColor")!
-        }
-        
         self.navigationController?.navigationBar.barTintColor = UIColor(hex: primaryColor)
-        self.statusBarBackground.backgroundColor = UIColor(hex: secondaryColor)
     }
 
+    func setFullVersion() {
+        tableView.reloadData()
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
+        NotificationCenter.default.removeObserver(self)
     }
 
     // MARK: - Table view data source
@@ -104,8 +89,14 @@ class SchemaTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:SchemaTableViewCell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath) as! SchemaTableViewCell
         
-        cell.previewButton.isHidden = schemas[indexPath.row].isFree
-        cell.previewLabel.isHidden = schemas[indexPath.row].isFree
+        var isFullVersion = false
+        
+        if UserDefaults.standard.object(forKey: "fullVersion") != nil {
+            isFullVersion = UserDefaults.standard.bool(forKey: "fullVersion")
+        }
+        
+        cell.previewButton.isHidden = schemas[indexPath.row].isFree || isFullVersion
+        cell.previewLabel.isHidden = schemas[indexPath.row].isFree || isFullVersion
         cell.nameLabel.text = schemas[indexPath.row].name
         cell.circleView.backgroundColor = UIColor(hex: schemas[indexPath.row].primaryColor)
         cell.selectedView.backgroundColor = UIColor(hex: schemas[indexPath.row].secondaryColor)
@@ -127,7 +118,7 @@ class SchemaTableViewController: UITableViewController {
         UserDefaults.standard.set(schema.primaryColor, forKey: "primaryColor")
         UserDefaults.standard.set(schema.secondaryColor, forKey: "secondaryColor")
         UserDefaults.standard.synchronize()
-        updateColor()
+        NotificationCenter.default.post(name: .updateTheme, object: nil)
     }
     
 
@@ -166,14 +157,25 @@ class SchemaTableViewController: UITableViewController {
     }
     */
 
-    /*
     // MARK: - Navigation
-
+    
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
+        if segue.destination is PreviewViewController {
+            let destination:PreviewViewController = segue.destination as! PreviewViewController
+            let button:UIButton = sender as! UIButton
+            let customCell:SchemaTableViewCell = button.superview?.superview as! SchemaTableViewCell
+            switch customCell.nameLabel.text! {
+            case "GREEN":
+                destination.current = 0
+            case "PINK":
+                destination.current = 1
+            default:
+                destination.current = 0
+            }
+        }
     }
-    */
 
 }
