@@ -1,0 +1,36 @@
+
+/* Class = "UIButton"; normalTitle = "Restore"; ObjectID = "AVw-Vq-WFz"; */
+"AVw-Vq-WFz.normalTitle" = "Restore";
+
+/* Class = "UILabel"; text = "Get 2 more color themes"; ObjectID = "Kxe-bm-hXh"; */
+"Kxe-bm-hXh.text" = "Get 2 more color themes";
+
+/* Class = "UIButton"; normalTitle = "No, thanks"; ObjectID = "Q7R-Qg-PKf"; */
+"Q7R-Qg-PKf.normalTitle" = "No, thanks";
+
+/* Class = "UILabel"; text = "Special themes"; ObjectID = "Swq-Mr-5fL"; */
+"Swq-Mr-5fL.text" = "Special themes";
+
+/* Class = "UILabel"; text = "MM: Color theme switch"; ObjectID = "WYT-Im-Wuo"; */
+"WYT-Im-Wuo.text" = "MM: Color theme switch";
+
+/* Class = "UIButton"; normalTitle = "Buy Full Version"; ObjectID = "Xh7-m3-n2y"; */
+"Xh7-m3-n2y.normalTitle" = "Buy Full Version";
+
+/* Class = "UILabel"; text = "OFF"; ObjectID = "ayc-Ld-uwg"; */
+"ayc-Ld-uwg.text" = "OFF";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "erh-Ft-saR"; */
+"erh-Ft-saR.text" = "Label";
+
+/* Class = "UILabel"; text = "PREVIEW"; ObjectID = "rIe-bZ-rgg"; */
+"rIe-bZ-rgg.text" = "PREVIEW";
+
+/* Class = "UILabel"; text = "FULL VERSION IS:"; ObjectID = "tNc-tF-qVa"; */
+"tNc-tF-qVa.text" = "FULL VERSION IS:";
+
+/* Class = "UIButton"; normalTitle = "Change color theme"; ObjectID = "wCC-sa-9OD"; */
+"wCC-sa-9OD.normalTitle" = "Change color theme";
+
+/* Class = "UILabel"; text = "Select color theme"; ObjectID = "wLp-sf-Y66"; */
+"wLp-sf-Y66.text" = "Select color theme";

@@ -32,10 +32,10 @@ class HomeViewController: UIViewController, UIGestureRecognizerDelegate {
         }
         
         contentView.layer.shadowColor = UIColor.black.cgColor
-        contentView.layer.shadowOffset = CGSize(width: 0, height: 5)
+        contentView.layer.shadowOffset = CGSize(width: 0, height: 1)
         contentView.layer.shadowOpacity = 0.4
-        contentView.layer.shadowRadius = 3
-        contentView.layer.cornerRadius = 3
+        contentView.layer.shadowRadius = 0
+        contentView.layer.cornerRadius = 2
         
         NotificationCenter.default.addObserver(self, selector: #selector(HomeViewController.updateColor), name: .updateTheme, object: nil)
         NotificationCenter.default.addObserver(self, selector: #selector(HomeViewController.setFullVersion), name: .fullVersion, object: nil)
@@ -51,9 +51,16 @@ class HomeViewController: UIViewController, UIGestureRecognizerDelegate {
         if UserDefaults.standard.object(forKey: "primaryColor") != nil {
             primaryColorHex = UserDefaults.standard.string(forKey: "primaryColor")!
         }
+        
+        var secondaryColorHex = "0288D1"
+        
+        if UserDefaults.standard.object(forKey: "secondaryColor") != nil {
+            secondaryColorHex = UserDefaults.standard.string(forKey: "secondaryColor")!
+        }
+        
         let primaryColor:UIColor = UIColor(hex: primaryColorHex)
         self.navigationController?.navigationBar.barTintColor = primaryColor
-        colorSampleView.backgroundColor = primaryColor
+        colorSampleView.backgroundColor = UIColor(hex: secondaryColorHex)
         restoreButton.setTitleColor(primaryColor, for: .normal)
         changeColorButton.backgroundColor = primaryColor
     }

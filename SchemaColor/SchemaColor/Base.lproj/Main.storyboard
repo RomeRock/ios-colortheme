@@ -495,6 +495,17 @@
                                     <action selector="githubButtonPressed:" destination="G3R-Rh-8y1" eventType="touchUpInside" id="CPl-Qc-2pe"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="O1f-Bs-hxl">
+                                <rect key="frame" x="88" y="605" width="129" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="Hap-I7-ziR"/>
+                                    <constraint firstAttribute="width" constant="129" id="KyV-vv-Bte"/>
+                                </constraints>
+                                <state key="normal" image="img_romerock_logo"/>
+                                <connections>
+                                    <action selector="romerockButtonPressed:" destination="G3R-Rh-8y1" eventType="touchUpInside" id="SpL-Ge-Mti"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.16470588235294117" green="0.18823529411764706" blue="0.20000000000000001" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
@@ -508,6 +519,8 @@
                             <constraint firstItem="BXR-vm-kOH" firstAttribute="leading" secondItem="tkx-ZD-OoZ" secondAttribute="leading" constant="32" id="nJd-Vg-cOK"/>
                             <constraint firstItem="jlO-JH-40w" firstAttribute="centerY" secondItem="BXR-vm-kOH" secondAttribute="centerY" id="oLa-zu-23E"/>
                             <constraint firstItem="jlO-JH-40w" firstAttribute="leading" secondItem="BXR-vm-kOH" secondAttribute="trailing" constant="30" id="qUg-zk-gPB"/>
+                            <constraint firstItem="jUp-tV-fFm" firstAttribute="top" secondItem="O1f-Bs-hxl" secondAttribute="bottom" constant="42" id="rVD-fo-2Pz"/>
+                            <constraint firstItem="O1f-Bs-hxl" firstAttribute="leading" secondItem="tkx-ZD-OoZ" secondAttribute="leading" constant="88" id="zlD-Mz-hjB"/>
                         </constraints>
                     </view>
                 </viewController>
@@ -539,6 +552,7 @@
         <image name="ic_github" width="54" height="54"/>
         <image name="ic_menu" width="16" height="15"/>
         <image name="ic_twitter" width="54" height="54"/>
+        <image name="img_romerock_logo" width="130" height="20"/>
         <image name="img_romerock_logo_gray" width="99" height="16"/>
     </resources>
 </document>
