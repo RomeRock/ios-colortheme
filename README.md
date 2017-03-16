@@ -146,11 +146,9 @@ If you select the option of buy, will store the option in the user preferences a
 
 ## Example
 
-[![color_2.gif](https://media.giphy.com/media/l0Iy9dMoAjZdyboA0/source.gif)](http://gph.is/2mQe02a)
+[![Mar-16-2017 14-14-06.gif](https://s14.postimg.org/4tdljxmgx/Mar_16_2017_14_14_06.gif)](https://postimg.org/image/43ut7klx9/)
 
-[![color_2.gif](http://gph.is/2mQe02a)]
-
-
+[![Mar-16-2017 14-13-42.gif](https://s28.postimg.org/ugtpn9lhp/Mar_16_2017_14_13_42.gif)](https://postimg.org/image/kwa30dw5l/)
 
 ## License
 
