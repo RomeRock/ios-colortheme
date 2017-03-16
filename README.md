@@ -146,9 +146,9 @@ If you select the option of buy, will store the option in the user preferences a
 
 ## Example
 
-[![color_2.gif](https://media.giphy.com/media/l0Iy9dMoAjZdyboA0/source.gif)](https://media.giphy.com/media/l0Iy9dMoAjZdyboA0/source.gif)
+[![color_2.gif](https://media.giphy.com/media/l0Iy9dMoAjZdyboA0/source.gif)](http://gph.is/2mQe02a)
 
-[![color_2.gif](http://gph.is/2mQe02a)](http://gph.is/2mQe02a)
+[![color_2.gif](http://gph.is/2mQe02a)]
 
 
 
