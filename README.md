@@ -116,7 +116,7 @@ Finally when you select a theme, it will be stored in the preferences and post t
 As we mention, when a theme is locked and you click in the cell, this action will show you a pop up giving you the option to unlock these themes in the `prepare(forSegue:)` function from the `SchemaTableViewController` we specified which theme you selected and pass to the pop up
 
 ```swift
-	override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         // Get the new view controller using segue.destinationViewController.
         // Pass the selected object to the new view controller.
         if segue.destination is PreviewViewController {
@@ -140,8 +140,8 @@ If you select the option of buy, will store the option in the user preferences a
 
 ```swift
 	UserDefaults.standard.set(true, forKey: "fullVersion")
-    UserDefaults.standard.synchronize()
-    NotificationCenter.default.post(name: .fullVersion, object: nil)
+	UserDefaults.standard.synchronize()
+	NotificationCenter.default.post(name: .fullVersion, object: nil)
 ```
 
 ## Example
